@@ -10,9 +10,11 @@
                      gtag('config', 'G-7BNERKEVFJ');
                 </script>
                 <script>
-                        a=document.getElementById("upi");
-                        a.setAttribute("href", "upi://pay?pa=Q52825105@ybl&pn=Erode+District+Consumer&cu=inr&mc=0000&tr=" + Math.random().toString(36).substr(2, 9));
-
+                        function updateUPI()
+                        {
+                            a=document.getElementById("upi");
+                            a.setAttribute("href", "upi://pay?pa=Q52825105@ybl&pn=Erode+District+Consumer&cu=inr&mc=0000&tr=" + Math.random().toString(36).substr(2, 9));
+                        }
                 </script>
                 <title> Consumer awareness podcast - Nugarvor Kaavalan (Tamil) </title> 
             <link
@@ -58,7 +60,7 @@
             .justified_div {text-align:justify;align-content:center;}
             
         </style>
-        <body >
+        <body onload="updateUPI()" >
                 
                 <div class="centered_div">
                 <h1> Consumer awareness podcast - Nugarvor Kaavalan (Tamil) </h1>
